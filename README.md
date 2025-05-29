@@ -1,5 +1,5 @@
 # RESQPLUS-PIPELINE
-Data pipeline for representing data according to the RERS-Q+ ontology
+Data pipeline for representing data according in RDF Format
 ![Diagrama](DiagramaPipelineTransformacion.png)
 
 ## Steps in the Pipeline
