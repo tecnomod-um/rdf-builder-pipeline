@@ -16,7 +16,3 @@ PYTHON_FOLDER = 'python_files'
 UDF_FILENAME = 'udf.py'
 INSTANCES_FOLDER = 'instances'
 FINAL_OUTPUT_FILENAME = 'output_RDF_Guttman.ttl'
-TEMPLATES_FOLDER = 'templates'
-
-# generateRules.py constants
-YARRML_TEMPLATE_FILE = 'yarrrml_template.yml'

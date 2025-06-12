@@ -4,7 +4,6 @@ import rdflib
 import argparse
 import pandas as pd
 import subprocess
-import numpy as np
 import sys
 
 from config import (

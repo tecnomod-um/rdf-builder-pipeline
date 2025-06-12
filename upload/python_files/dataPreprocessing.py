@@ -4,10 +4,17 @@ import config
 import os
 import sys
 
-### Setup functions
+### SETUP FUNCTIONS ###
 
-# Function to clean whitespace around field IDs and other necessary fields
 def clean_data(df):
+    """
+    Cleans whitespace around field IDs and other necessary fields in the DataFrame.
+    Args:
+        df (pd.DataFrame): The DataFrame to be cleaned.
+    Returns:
+        pd.DataFrame: The cleaned DataFrame with stripped whitespace in specified columns.
+    """
+
     if 'field_id' in df.columns:
         df['field_id'] = df['field_id'].str.strip()
     if 'categorical_value' in df.columns:
@@ -17,11 +24,17 @@ def clean_data(df):
     return df
 
 
-# Checks if the necessary columns are present in the data and mapping DataFrames.
+
 def validate_inputs(data_df: pd.DataFrame, mapping_df: pd.DataFrame):
     """
-    Lanza un error si faltan columnas necesarias en data_df o mapping_df.
+    Checks if the necessary columns are present in the data and mapping DataFrames.
+    Raises:
+        KeyError: If any of the required columns are missing in the data or mapping DataFrames.
+    Args:
+        data_df (pd.DataFrame): The DataFrame containing the data to be processed.
+        mapping_df (pd.DataFrame): The DataFrame containing the mapping information.
     """
+
     missing_data = config.REQUIRED_DATA_COLS - set(data_df.columns)
     if missing_data:
         raise KeyError(f"The following columns are missing in the data file: {missing_data}")
@@ -31,7 +44,6 @@ def validate_inputs(data_df: pd.DataFrame, mapping_df: pd.DataFrame):
         raise KeyError(f"The following columns are missing in the mappings file: {missing_map}")
 
 
-# Builds default dictionaries that will help with the processing of the data.
 def build_mapping_indices(mapping_df):
     """
     Builds two structures by analyzing the mapping DataFrame:
@@ -41,6 +53,7 @@ def build_mapping_indices(mapping_df):
     This is used to avoid processing the same field multiple times, and to avoid having to
     search for the procedure result in the mapping DataFrame every time we process a row.
     """
+    
     mapping_by_field = {}
     proc_result_index = {}
 
@@ -58,8 +71,16 @@ def build_mapping_indices(mapping_df):
     
     return mapping_by_field, proc_result_index
 
-# Obtains the field value from a data row and checks if it is valid
 def get_field_value(data_row, map_row):
+    """
+    Obtains the value of a field from a data row based on the mapping row.
+    Args:
+        data_row (pd.Series): The row of data being processed.
+        map_row (dict): The mapping row containing the field information.
+    Returns:
+        str, int, bool, or None: The processed value of the field.
+    """
+
     field_id = map_row['field_id']
     dtype = map_row['value_type']
     raw_value = data_row[field_id]
@@ -79,8 +100,17 @@ def get_field_value(data_row, map_row):
     
     return raw_value
 
-# Checks if the procedure result is valid and returns the corresponding value
+
 def get_procedure_result(data_row, map_row, proc_result_index):
+    """
+    Obtains the procedure result from a data row based on the mapping row.
+    Args:
+        data_row (pd.Series): The row of data being processed.
+        map_row (dict): The mapping row containing the procedure result field.
+        proc_result_index (dict): The index mapping procedure results to their URIs.
+    Returns:
+        str or None: The URI of the procedure result if valid, otherwise None.
+    """
 
     proc_field = map_row.get('procedure_result')
 
@@ -99,10 +129,18 @@ def get_procedure_result(data_row, map_row, proc_result_index):
     return field_index.get(value)
 
 
-### Processing functions
+### PROCESSING FUNCTIONS ###
 
 
 def process_data(data_df, mapping_df):
+    """
+    Processes the data DataFrame using the mapping DataFrame to generate a new DataFrame with the processed results.
+    Args:
+        data_df (pd.DataFrame): The DataFrame containing the data to be processed.
+        mapping_df (pd.DataFrame): The DataFrame containing the mapping information.
+    Returns:
+        pd.DataFrame: A new DataFrame containing the processed results.
+    """
     
     # 1. Validates that the necessary columns are present in the data and mapping DataFrames.
     validate_inputs(data_df, mapping_df)
@@ -147,7 +185,6 @@ def process_data(data_df, mapping_df):
                 results.append(result_row)
 
     return pd.DataFrame(results)
-
 
 
 
