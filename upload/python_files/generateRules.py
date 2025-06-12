@@ -421,7 +421,7 @@ def write_output(template, rules, output_file_path):
     yarrml_output = template + '\n'.join(rules)
     with open(output_file_path, 'w', encoding='utf-8') as output_file:
         output_file.write(yarrml_output)
-        print(f"YARRRML generado guardado en: {output_file_path}")
+        print(f"Generated YARRRML saved at: {output_file_path}")
 
 def main():
     args = parse_arguments()

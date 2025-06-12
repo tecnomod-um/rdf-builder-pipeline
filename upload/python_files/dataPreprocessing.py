@@ -53,7 +53,7 @@ def build_mapping_indices(mapping_df):
     This is used to avoid processing the same field multiple times, and to avoid having to
     search for the procedure result in the mapping DataFrame every time we process a row.
     """
-    
+
     mapping_by_field = {}
     proc_result_index = {}
 
@@ -109,7 +109,7 @@ def get_procedure_result(data_row, map_row, proc_result_index):
         map_row (dict): The mapping row containing the procedure result field.
         proc_result_index (dict): The index mapping procedure results to their URIs.
     Returns:
-        str or None: The URI of the procedure result if valid, otherwise None.
+        str or None: The URI of the procedure result if valid. Otherwise, returns None.
     """
 
     proc_field = map_row.get('procedure_result')
