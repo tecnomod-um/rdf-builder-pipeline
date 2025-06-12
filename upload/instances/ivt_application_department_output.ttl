@@ -1,0 +1,76 @@
+@prefix ns1: <http://www.semanticweb.org/catimc/SemanticCommonDataModel#> .
+@prefix ns2: <http://stratifai#> .
+@prefix ns3: <http://purl.org/biotop/btl2.owl#> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Case_8907bf7c-925b-4202-b5e0-3836c142ede7> a ns2:ClinicalCase ;
+    ns2:caseId "8907bf7c-925b-4202-b5e0-3836c142ede7" ;
+    ns1:hasInformationAboutProvider <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_8907bf7c-925b-4202-b5e0-3836c142ede7>,
+        <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_8907bf7c-925b-4202-b5e0-3836c142ede7> ;
+    ns1:hasPart <http://stratifai-resources/ontologies/stratifai-data#ClinicalProcedureSt_ThrombolysisTreatment_ivt_application_department_8907bf7c-925b-4202-b5e0-3836c142ede7> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Case_a6fc0104-235a-4eef-a8be-b98113adcea0> a ns2:ClinicalCase ;
+    ns2:caseId "a6fc0104-235a-4eef-a8be-b98113adcea0" ;
+    ns1:hasInformationAboutProvider <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_a6fc0104-235a-4eef-a8be-b98113adcea0>,
+        <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_a6fc0104-235a-4eef-a8be-b98113adcea0> ;
+    ns1:hasPart <http://stratifai-resources/ontologies/stratifai-data#ClinicalProcedureSt_ThrombolysisTreatment_ivt_application_department_a6fc0104-235a-4eef-a8be-b98113adcea0> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Case_af644c7c-f11e-4953-84c7-8201ea2aa360> a ns2:ClinicalCase ;
+    ns2:caseId "af644c7c-f11e-4953-84c7-8201ea2aa360" ;
+    ns1:hasInformationAboutProvider <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_af644c7c-f11e-4953-84c7-8201ea2aa360>,
+        <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_af644c7c-f11e-4953-84c7-8201ea2aa360> ;
+    ns1:hasPart <http://stratifai-resources/ontologies/stratifai-data#ClinicalProcedureSt_ThrombolysisTreatment_ivt_application_department_af644c7c-f11e-4953-84c7-8201ea2aa360> .
+
+<http://stratifai-resources/ontologies/stratifai-data#ClinicalProcedureSt_ThrombolysisTreatment_ivt_application_department_8907bf7c-925b-4202-b5e0-3836c142ede7> a ns2:ThrombolysisTreatment ;
+    ns1:isResultOf <http://stratifai-resources/ontologies/stratifai-data#Procedure_277132007_8907bf7c-925b-4202-b5e0-3836c142ede7> ;
+    ns1:procedureLocation <http://stratifai-resources/ontologies/stratifai-data#ProcedureLocation_79491001> .
+
+<http://stratifai-resources/ontologies/stratifai-data#ClinicalProcedureSt_ThrombolysisTreatment_ivt_application_department_a6fc0104-235a-4eef-a8be-b98113adcea0> a ns2:ThrombolysisTreatment ;
+    ns1:isResultOf <http://stratifai-resources/ontologies/stratifai-data#Procedure_277132007_a6fc0104-235a-4eef-a8be-b98113adcea0> ;
+    ns1:procedureLocation <http://stratifai-resources/ontologies/stratifai-data#ProcedureLocation_73770003> .
+
+<http://stratifai-resources/ontologies/stratifai-data#ClinicalProcedureSt_ThrombolysisTreatment_ivt_application_department_af644c7c-f11e-4953-84c7-8201ea2aa360> a ns2:ThrombolysisTreatment ;
+    ns1:isResultOf <http://stratifai-resources/ontologies/stratifai-data#Procedure_277132007_af644c7c-f11e-4953-84c7-8201ea2aa360> ;
+    ns1:procedureLocation <http://stratifai-resources/ontologies/stratifai-data#ProcedureLocation_Stroke/ICULocation> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_8907bf7c-925b-4202-b5e0-3836c142ede7> a ns2:InformationAboutStratifAIProviderOfInformation ;
+    ns3:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_8907bf7c-925b-4202-b5e0-3836c142ede7> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_a6fc0104-235a-4eef-a8be-b98113adcea0> a ns2:InformationAboutStratifAIProviderOfInformation ;
+    ns3:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_a6fc0104-235a-4eef-a8be-b98113adcea0> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_af644c7c-f11e-4953-84c7-8201ea2aa360> a ns2:InformationAboutStratifAIProviderOfInformation ;
+    ns3:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_af644c7c-f11e-4953-84c7-8201ea2aa360> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_8907bf7c-925b-4202-b5e0-3836c142ede7> a ns2:InformationAboutStratifAISourceOfInformation ;
+    ns3:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAISource_8907bf7c-925b-4202-b5e0-3836c142ede7> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_a6fc0104-235a-4eef-a8be-b98113adcea0> a ns2:InformationAboutStratifAISourceOfInformation ;
+    ns3:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAISource_a6fc0104-235a-4eef-a8be-b98113adcea0> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_af644c7c-f11e-4953-84c7-8201ea2aa360> a ns2:InformationAboutStratifAISourceOfInformation ;
+    ns3:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAISource_af644c7c-f11e-4953-84c7-8201ea2aa360> .
+
+<http://stratifai-resources/ontologies/stratifai-data#ProcedureLocation_73770003> a <http://snomed.info/id/73770003> .
+
+<http://stratifai-resources/ontologies/stratifai-data#ProcedureLocation_79491001> a <http://snomed.info/id/79491001> .
+
+<http://stratifai-resources/ontologies/stratifai-data#ProcedureLocation_Stroke/ICULocation> a <http://www.semanticweb.org/catimc/resqplus#Stroke/ICULocation> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Procedure_277132007_8907bf7c-925b-4202-b5e0-3836c142ede7> a <http://snomed.info/id/277132007> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Procedure_277132007_a6fc0104-235a-4eef-a8be-b98113adcea0> a <http://snomed.info/id/277132007> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Procedure_277132007_af644c7c-f11e-4953-84c7-8201ea2aa360> a <http://snomed.info/id/277132007> .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_8907bf7c-925b-4202-b5e0-3836c142ede7> a ns2:StratifAIProvider .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_a6fc0104-235a-4eef-a8be-b98113adcea0> a ns2:StratifAIProvider .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_af644c7c-f11e-4953-84c7-8201ea2aa360> a ns2:StratifAIProvider .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAISource_8907bf7c-925b-4202-b5e0-3836c142ede7> a ns2:StratifAISource .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAISource_a6fc0104-235a-4eef-a8be-b98113adcea0> a ns2:StratifAISource .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAISource_af644c7c-f11e-4953-84c7-8201ea2aa360> a ns2:StratifAISource .
+

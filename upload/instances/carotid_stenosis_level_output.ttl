@@ -1,0 +1,108 @@
+@prefix ns1: <http://stratifai#> .
+@prefix ns2: <http://purl.org/biotop/btl2.owl#> .
+@prefix ns3: <http://www.semanticweb.org/catimc/SemanticCommonDataModel#> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Case_4280929d-fb0f-4e20-b7d5-f96625908add> a ns1:ClinicalCase ;
+    ns1:caseId "4280929d-fb0f-4e20-b7d5-f96625908add" ;
+    ns3:hasInformationAboutProvider <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_4280929d-fb0f-4e20-b7d5-f96625908add>,
+        <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_4280929d-fb0f-4e20-b7d5-f96625908add> ;
+    ns3:hasPart <http://stratifai-resources/ontologies/stratifai-data#ObservationResultSt_PostAcuteCarotidStenosisLevel_carotid_stenosis_level_4280929d-fb0f-4e20-b7d5-f96625908add> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Case_77661181-21ac-4621-a395-37b1e82bab45> a ns1:ClinicalCase ;
+    ns1:caseId "77661181-21ac-4621-a395-37b1e82bab45" ;
+    ns3:hasInformationAboutProvider <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_77661181-21ac-4621-a395-37b1e82bab45>,
+        <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_77661181-21ac-4621-a395-37b1e82bab45> ;
+    ns3:hasPart <http://stratifai-resources/ontologies/stratifai-data#ObservationResultSt_PostAcuteCarotidStenosisLevel_carotid_stenosis_level_77661181-21ac-4621-a395-37b1e82bab45> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Case_af644c7c-f11e-4953-84c7-8201ea2aa360> a ns1:ClinicalCase ;
+    ns1:caseId "af644c7c-f11e-4953-84c7-8201ea2aa360" ;
+    ns3:hasInformationAboutProvider <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_af644c7c-f11e-4953-84c7-8201ea2aa360>,
+        <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_af644c7c-f11e-4953-84c7-8201ea2aa360> ;
+    ns3:hasPart <http://stratifai-resources/ontologies/stratifai-data#ObservationResultSt_PostAcuteCarotidStenosisLevel_carotid_stenosis_level_af644c7c-f11e-4953-84c7-8201ea2aa360> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Case_f52caf27-3195-49c5-814c-119426bc6e84> a ns1:ClinicalCase ;
+    ns1:caseId "f52caf27-3195-49c5-814c-119426bc6e84" ;
+    ns3:hasInformationAboutProvider <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_f52caf27-3195-49c5-814c-119426bc6e84>,
+        <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_f52caf27-3195-49c5-814c-119426bc6e84> ;
+    ns3:hasPart <http://stratifai-resources/ontologies/stratifai-data#ObservationResultSt_PostAcuteCarotidStenosisLevel_carotid_stenosis_level_f52caf27-3195-49c5-814c-119426bc6e84> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_4280929d-fb0f-4e20-b7d5-f96625908add> a ns1:InformationAboutStratifAIProviderOfInformation ;
+    ns2:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_4280929d-fb0f-4e20-b7d5-f96625908add> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_77661181-21ac-4621-a395-37b1e82bab45> a ns1:InformationAboutStratifAIProviderOfInformation ;
+    ns2:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_77661181-21ac-4621-a395-37b1e82bab45> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_af644c7c-f11e-4953-84c7-8201ea2aa360> a ns1:InformationAboutStratifAIProviderOfInformation ;
+    ns2:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_af644c7c-f11e-4953-84c7-8201ea2aa360> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_f52caf27-3195-49c5-814c-119426bc6e84> a ns1:InformationAboutStratifAIProviderOfInformation ;
+    ns2:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_f52caf27-3195-49c5-814c-119426bc6e84> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_4280929d-fb0f-4e20-b7d5-f96625908add> a ns1:InformationAboutStratifAISourceOfInformation ;
+    ns2:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAISource_4280929d-fb0f-4e20-b7d5-f96625908add> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_77661181-21ac-4621-a395-37b1e82bab45> a ns1:InformationAboutStratifAISourceOfInformation ;
+    ns2:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAISource_77661181-21ac-4621-a395-37b1e82bab45> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_af644c7c-f11e-4953-84c7-8201ea2aa360> a ns1:InformationAboutStratifAISourceOfInformation ;
+    ns2:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAISource_af644c7c-f11e-4953-84c7-8201ea2aa360> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_f52caf27-3195-49c5-814c-119426bc6e84> a ns1:InformationAboutStratifAISourceOfInformation ;
+    ns2:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAISource_f52caf27-3195-49c5-814c-119426bc6e84> .
+
+<http://stratifai-resources/ontologies/stratifai-data#ObservationResultSt_PostAcuteCarotidStenosisLevel_carotid_stenosis_level_4280929d-fb0f-4e20-b7d5-f96625908add> a ns1:PostAcuteCarotidStenosisLevel ;
+    ns3:hasObservable <http://www.semanticweb.org/catimc/resqplus#CarotidStenosisLevelObservable> ;
+    ns3:hasObservableValue <http://stratifai-resources/ontologies/stratifai-data#PrimitiveValue_carotid_stenosis_level_4280929d-fb0f-4e20-b7d5-f96625908add> ;
+    ns3:isResultOf <http://stratifai-resources/ontologies/stratifai-data#Procedure_PostAcuteCareProcedure_4280929d-fb0f-4e20-b7d5-f96625908add> .
+
+<http://stratifai-resources/ontologies/stratifai-data#ObservationResultSt_PostAcuteCarotidStenosisLevel_carotid_stenosis_level_77661181-21ac-4621-a395-37b1e82bab45> a ns1:PostAcuteCarotidStenosisLevel ;
+    ns3:hasObservable <http://www.semanticweb.org/catimc/resqplus#CarotidStenosisLevelObservable> ;
+    ns3:hasObservableValue <http://stratifai-resources/ontologies/stratifai-data#PrimitiveValue_carotid_stenosis_level_77661181-21ac-4621-a395-37b1e82bab45> ;
+    ns3:isResultOf <http://stratifai-resources/ontologies/stratifai-data#Procedure_PostAcuteCareProcedure_77661181-21ac-4621-a395-37b1e82bab45> .
+
+<http://stratifai-resources/ontologies/stratifai-data#ObservationResultSt_PostAcuteCarotidStenosisLevel_carotid_stenosis_level_af644c7c-f11e-4953-84c7-8201ea2aa360> a ns1:PostAcuteCarotidStenosisLevel ;
+    ns3:hasObservable <http://www.semanticweb.org/catimc/resqplus#CarotidStenosisLevelObservable> ;
+    ns3:hasObservableValue <http://stratifai-resources/ontologies/stratifai-data#PrimitiveValue_carotid_stenosis_level_af644c7c-f11e-4953-84c7-8201ea2aa360> ;
+    ns3:isResultOf <http://stratifai-resources/ontologies/stratifai-data#Procedure_PostAcuteCareProcedure_af644c7c-f11e-4953-84c7-8201ea2aa360> .
+
+<http://stratifai-resources/ontologies/stratifai-data#ObservationResultSt_PostAcuteCarotidStenosisLevel_carotid_stenosis_level_f52caf27-3195-49c5-814c-119426bc6e84> a ns1:PostAcuteCarotidStenosisLevel ;
+    ns3:hasObservable <http://www.semanticweb.org/catimc/resqplus#CarotidStenosisLevelObservable> ;
+    ns3:hasObservableValue <http://stratifai-resources/ontologies/stratifai-data#PrimitiveValue_carotid_stenosis_level_f52caf27-3195-49c5-814c-119426bc6e84> ;
+    ns3:isResultOf <http://stratifai-resources/ontologies/stratifai-data#Procedure_PostAcuteCareProcedure_f52caf27-3195-49c5-814c-119426bc6e84> .
+
+<http://stratifai-resources/ontologies/stratifai-data#PrimitiveValue_carotid_stenosis_level_4280929d-fb0f-4e20-b7d5-f96625908add> a ns3:QuantitativeResultValue ;
+    ns2:hasValue "50 to 70" .
+
+<http://stratifai-resources/ontologies/stratifai-data#PrimitiveValue_carotid_stenosis_level_77661181-21ac-4621-a395-37b1e82bab45> a ns3:QuantitativeResultValue ;
+    ns2:hasValue "50 to 70" .
+
+<http://stratifai-resources/ontologies/stratifai-data#PrimitiveValue_carotid_stenosis_level_af644c7c-f11e-4953-84c7-8201ea2aa360> a ns3:QuantitativeResultValue ;
+    ns2:hasValue "50 to 70" .
+
+<http://stratifai-resources/ontologies/stratifai-data#PrimitiveValue_carotid_stenosis_level_f52caf27-3195-49c5-814c-119426bc6e84> a ns3:QuantitativeResultValue ;
+    ns2:hasValue "over 70" .
+
+<http://stratifai-resources/ontologies/stratifai-data#Procedure_PostAcuteCareProcedure_4280929d-fb0f-4e20-b7d5-f96625908add> a <http://www.semanticweb.org/catimc/resqplus#PostAcuteCareProcedure> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Procedure_PostAcuteCareProcedure_77661181-21ac-4621-a395-37b1e82bab45> a <http://www.semanticweb.org/catimc/resqplus#PostAcuteCareProcedure> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Procedure_PostAcuteCareProcedure_af644c7c-f11e-4953-84c7-8201ea2aa360> a <http://www.semanticweb.org/catimc/resqplus#PostAcuteCareProcedure> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Procedure_PostAcuteCareProcedure_f52caf27-3195-49c5-814c-119426bc6e84> a <http://www.semanticweb.org/catimc/resqplus#PostAcuteCareProcedure> .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_4280929d-fb0f-4e20-b7d5-f96625908add> a ns1:StratifAIProvider .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_77661181-21ac-4621-a395-37b1e82bab45> a ns1:StratifAIProvider .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_af644c7c-f11e-4953-84c7-8201ea2aa360> a ns1:StratifAIProvider .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_f52caf27-3195-49c5-814c-119426bc6e84> a ns1:StratifAIProvider .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAISource_4280929d-fb0f-4e20-b7d5-f96625908add> a ns1:StratifAISource .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAISource_77661181-21ac-4621-a395-37b1e82bab45> a ns1:StratifAISource .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAISource_af644c7c-f11e-4953-84c7-8201ea2aa360> a ns1:StratifAISource .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAISource_f52caf27-3195-49c5-814c-119426bc6e84> a ns1:StratifAISource .
+

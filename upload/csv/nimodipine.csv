@@ -1,0 +1,2 @@
+field_id,pattern_type,source_procedure,procedure_part,procedure_result,ontology_mapping,observable,finding,procedure,OBLIGATORY,value_type,categorical_value,categorical_ontology_mapping,procedure_reason,procedure_location,measurement_unit,procedure_frequency,temporal_context,statement_context,case_id,field_value
+nimodipine,ClinicalProcedureStatement,http://snomed.info/id/277132007,,,NimodipineAdm,,,http://www.semanticweb.org/catimc/resqplus#NimodipineAdminProcedure,1.0,Boolean,,,,,,,,,5ad92f4a-7454-42dc-8b49-eb8670154055,VERDADERO

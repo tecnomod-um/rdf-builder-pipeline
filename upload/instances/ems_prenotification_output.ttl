@@ -1,0 +1,279 @@
+@prefix ns1: <http://www.semanticweb.org/catimc/SemanticCommonDataModel#> .
+@prefix ns2: <http://purl.org/biotop/btl2.owl#> .
+@prefix ns3: <http://stratifai#> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Case_0c8c2f20-c5cd-4394-98d0-3f8d6e0d4154> a ns3:ClinicalCase ;
+    ns3:caseId "0c8c2f20-c5cd-4394-98d0-3f8d6e0d4154" ;
+    ns1:hasInformationAboutProvider <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_0c8c2f20-c5cd-4394-98d0-3f8d6e0d4154>,
+        <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_0c8c2f20-c5cd-4394-98d0-3f8d6e0d4154> ;
+    ns1:hasPart <http://stratifai-resources/ontologies/stratifai-data#ClinicalProcedureSt_AdmissionEMSPrenotification_ems_prenotification_0c8c2f20-c5cd-4394-98d0-3f8d6e0d4154> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Case_1e86ce42-0390-44b3-93f9-5328718fc280> a ns3:ClinicalCase ;
+    ns3:caseId "1e86ce42-0390-44b3-93f9-5328718fc280" ;
+    ns1:hasInformationAboutProvider <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_1e86ce42-0390-44b3-93f9-5328718fc280>,
+        <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_1e86ce42-0390-44b3-93f9-5328718fc280> ;
+    ns1:hasPart <http://stratifai-resources/ontologies/stratifai-data#ClinicalProcedureSt_AdmissionEMSPrenotification_ems_prenotification_1e86ce42-0390-44b3-93f9-5328718fc280> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Case_2212d45a-a1f2-4148-9d8c-0faabb9c00ca> a ns3:ClinicalCase ;
+    ns3:caseId "2212d45a-a1f2-4148-9d8c-0faabb9c00ca" ;
+    ns1:hasInformationAboutProvider <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_2212d45a-a1f2-4148-9d8c-0faabb9c00ca>,
+        <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_2212d45a-a1f2-4148-9d8c-0faabb9c00ca> ;
+    ns1:hasPart <http://stratifai-resources/ontologies/stratifai-data#ClinicalProcedureSt_AdmissionEMSPrenotification_ems_prenotification_2212d45a-a1f2-4148-9d8c-0faabb9c00ca> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Case_24eba441-7ff2-4d0a-97b9-e2953094cafa> a ns3:ClinicalCase ;
+    ns3:caseId "24eba441-7ff2-4d0a-97b9-e2953094cafa" ;
+    ns1:hasInformationAboutProvider <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_24eba441-7ff2-4d0a-97b9-e2953094cafa>,
+        <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_24eba441-7ff2-4d0a-97b9-e2953094cafa> ;
+    ns1:hasPart <http://stratifai-resources/ontologies/stratifai-data#ClinicalProcedureSt_AdmissionEMSPrenotification_ems_prenotification_24eba441-7ff2-4d0a-97b9-e2953094cafa> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Case_5ad92f4a-7454-42dc-8b49-eb8670154055> a ns3:ClinicalCase ;
+    ns3:caseId "5ad92f4a-7454-42dc-8b49-eb8670154055" ;
+    ns1:hasInformationAboutProvider <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_5ad92f4a-7454-42dc-8b49-eb8670154055>,
+        <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_5ad92f4a-7454-42dc-8b49-eb8670154055> ;
+    ns1:hasPart <http://stratifai-resources/ontologies/stratifai-data#ClinicalProcedureSt_AdmissionEMSPrenotification_ems_prenotification_5ad92f4a-7454-42dc-8b49-eb8670154055> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Case_6dad232d-fbc1-4d84-9277-894c78bad40a> a ns3:ClinicalCase ;
+    ns3:caseId "6dad232d-fbc1-4d84-9277-894c78bad40a" ;
+    ns1:hasInformationAboutProvider <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_6dad232d-fbc1-4d84-9277-894c78bad40a>,
+        <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_6dad232d-fbc1-4d84-9277-894c78bad40a> ;
+    ns1:hasPart <http://stratifai-resources/ontologies/stratifai-data#ClinicalProcedureSt_AdmissionEMSPrenotification_ems_prenotification_6dad232d-fbc1-4d84-9277-894c78bad40a> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Case_8907bf7c-925b-4202-b5e0-3836c142ede7> a ns3:ClinicalCase ;
+    ns3:caseId "8907bf7c-925b-4202-b5e0-3836c142ede7" ;
+    ns1:hasInformationAboutProvider <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_8907bf7c-925b-4202-b5e0-3836c142ede7>,
+        <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_8907bf7c-925b-4202-b5e0-3836c142ede7> ;
+    ns1:hasPart <http://stratifai-resources/ontologies/stratifai-data#ClinicalProcedureSt_AdmissionEMSPrenotification_ems_prenotification_8907bf7c-925b-4202-b5e0-3836c142ede7> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Case_ab952a69-a895-49b6-9a15-ef05213e33da> a ns3:ClinicalCase ;
+    ns3:caseId "ab952a69-a895-49b6-9a15-ef05213e33da" ;
+    ns1:hasInformationAboutProvider <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_ab952a69-a895-49b6-9a15-ef05213e33da>,
+        <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_ab952a69-a895-49b6-9a15-ef05213e33da> ;
+    ns1:hasPart <http://stratifai-resources/ontologies/stratifai-data#ClinicalProcedureSt_AdmissionEMSPrenotification_ems_prenotification_ab952a69-a895-49b6-9a15-ef05213e33da> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Case_ac419a97-9c46-446e-bf7b-ea81a0117cb0> a ns3:ClinicalCase ;
+    ns3:caseId "ac419a97-9c46-446e-bf7b-ea81a0117cb0" ;
+    ns1:hasInformationAboutProvider <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_ac419a97-9c46-446e-bf7b-ea81a0117cb0>,
+        <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_ac419a97-9c46-446e-bf7b-ea81a0117cb0> ;
+    ns1:hasPart <http://stratifai-resources/ontologies/stratifai-data#ClinicalProcedureSt_AdmissionEMSPrenotification_ems_prenotification_ac419a97-9c46-446e-bf7b-ea81a0117cb0> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Case_c06ac53e-5704-4ca3-a8ea-6e9c81695237> a ns3:ClinicalCase ;
+    ns3:caseId "c06ac53e-5704-4ca3-a8ea-6e9c81695237" ;
+    ns1:hasInformationAboutProvider <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_c06ac53e-5704-4ca3-a8ea-6e9c81695237>,
+        <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_c06ac53e-5704-4ca3-a8ea-6e9c81695237> ;
+    ns1:hasPart <http://stratifai-resources/ontologies/stratifai-data#ClinicalProcedureSt_AdmissionEMSPrenotification_ems_prenotification_c06ac53e-5704-4ca3-a8ea-6e9c81695237> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Case_f52caf27-3195-49c5-814c-119426bc6e84> a ns3:ClinicalCase ;
+    ns3:caseId "f52caf27-3195-49c5-814c-119426bc6e84" ;
+    ns1:hasInformationAboutProvider <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_f52caf27-3195-49c5-814c-119426bc6e84>,
+        <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_f52caf27-3195-49c5-814c-119426bc6e84> ;
+    ns1:hasPart <http://stratifai-resources/ontologies/stratifai-data#ClinicalProcedureSt_AdmissionEMSPrenotification_ems_prenotification_f52caf27-3195-49c5-814c-119426bc6e84> .
+
+<http://stratifai-resources/ontologies/stratifai-data#ClinicalProcedureSt_AdmissionEMSPrenotification_ems_prenotification_0c8c2f20-c5cd-4394-98d0-3f8d6e0d4154> a ns3:AdmissionEMSPrenotification ;
+    ns1:isResultOf <http://stratifai-resources/ontologies/stratifai-data#Procedure_32485007_0c8c2f20-c5cd-4394-98d0-3f8d6e0d4154> ;
+    ns1:procedureContext <http://snomed.info/id/385658003> ;
+    ns1:representsProcedure <http://stratifai-resources/ontologies/stratifai-data#EMSPrenotification_0c8c2f20-c5cd-4394-98d0-3f8d6e0d4154> .
+
+<http://stratifai-resources/ontologies/stratifai-data#ClinicalProcedureSt_AdmissionEMSPrenotification_ems_prenotification_1e86ce42-0390-44b3-93f9-5328718fc280> a ns3:AdmissionEMSPrenotification ;
+    ns1:isResultOf <http://stratifai-resources/ontologies/stratifai-data#Procedure_32485007_1e86ce42-0390-44b3-93f9-5328718fc280> ;
+    ns1:procedureContext <http://snomed.info/id/385658003> ;
+    ns1:representsProcedure <http://stratifai-resources/ontologies/stratifai-data#EMSPrenotification_1e86ce42-0390-44b3-93f9-5328718fc280> .
+
+<http://stratifai-resources/ontologies/stratifai-data#ClinicalProcedureSt_AdmissionEMSPrenotification_ems_prenotification_2212d45a-a1f2-4148-9d8c-0faabb9c00ca> a ns3:AdmissionEMSPrenotification ;
+    ns1:isResultOf <http://stratifai-resources/ontologies/stratifai-data#Procedure_32485007_2212d45a-a1f2-4148-9d8c-0faabb9c00ca> ;
+    ns1:procedureContext <http://snomed.info/id/385658003> ;
+    ns1:representsProcedure <http://stratifai-resources/ontologies/stratifai-data#EMSPrenotification_2212d45a-a1f2-4148-9d8c-0faabb9c00ca> .
+
+<http://stratifai-resources/ontologies/stratifai-data#ClinicalProcedureSt_AdmissionEMSPrenotification_ems_prenotification_24eba441-7ff2-4d0a-97b9-e2953094cafa> a ns3:AdmissionEMSPrenotification ;
+    ns1:isResultOf <http://stratifai-resources/ontologies/stratifai-data#Procedure_32485007_24eba441-7ff2-4d0a-97b9-e2953094cafa> ;
+    ns1:procedureContext <http://snomed.info/id/385658003> ;
+    ns1:representsProcedure <http://stratifai-resources/ontologies/stratifai-data#EMSPrenotification_24eba441-7ff2-4d0a-97b9-e2953094cafa> .
+
+<http://stratifai-resources/ontologies/stratifai-data#ClinicalProcedureSt_AdmissionEMSPrenotification_ems_prenotification_5ad92f4a-7454-42dc-8b49-eb8670154055> a ns3:AdmissionEMSPrenotification ;
+    ns1:isResultOf <http://stratifai-resources/ontologies/stratifai-data#Procedure_32485007_5ad92f4a-7454-42dc-8b49-eb8670154055> ;
+    ns1:procedureContext <http://snomed.info/id/385658003> ;
+    ns1:representsProcedure <http://stratifai-resources/ontologies/stratifai-data#EMSPrenotification_5ad92f4a-7454-42dc-8b49-eb8670154055> .
+
+<http://stratifai-resources/ontologies/stratifai-data#ClinicalProcedureSt_AdmissionEMSPrenotification_ems_prenotification_6dad232d-fbc1-4d84-9277-894c78bad40a> a ns3:AdmissionEMSPrenotification ;
+    ns1:isResultOf <http://stratifai-resources/ontologies/stratifai-data#Procedure_32485007_6dad232d-fbc1-4d84-9277-894c78bad40a> ;
+    ns1:procedureContext <http://snomed.info/id/385658003> ;
+    ns1:representsProcedure <http://stratifai-resources/ontologies/stratifai-data#EMSPrenotification_6dad232d-fbc1-4d84-9277-894c78bad40a> .
+
+<http://stratifai-resources/ontologies/stratifai-data#ClinicalProcedureSt_AdmissionEMSPrenotification_ems_prenotification_8907bf7c-925b-4202-b5e0-3836c142ede7> a ns3:AdmissionEMSPrenotification ;
+    ns1:isResultOf <http://stratifai-resources/ontologies/stratifai-data#Procedure_32485007_8907bf7c-925b-4202-b5e0-3836c142ede7> ;
+    ns1:procedureContext <http://snomed.info/id/385658003> ;
+    ns1:representsProcedure <http://stratifai-resources/ontologies/stratifai-data#EMSPrenotification_8907bf7c-925b-4202-b5e0-3836c142ede7> .
+
+<http://stratifai-resources/ontologies/stratifai-data#ClinicalProcedureSt_AdmissionEMSPrenotification_ems_prenotification_ab952a69-a895-49b6-9a15-ef05213e33da> a ns3:AdmissionEMSPrenotification ;
+    ns1:isResultOf <http://stratifai-resources/ontologies/stratifai-data#Procedure_32485007_ab952a69-a895-49b6-9a15-ef05213e33da> ;
+    ns1:procedureContext <http://snomed.info/id/385658003> ;
+    ns1:representsProcedure <http://stratifai-resources/ontologies/stratifai-data#EMSPrenotification_ab952a69-a895-49b6-9a15-ef05213e33da> .
+
+<http://stratifai-resources/ontologies/stratifai-data#ClinicalProcedureSt_AdmissionEMSPrenotification_ems_prenotification_ac419a97-9c46-446e-bf7b-ea81a0117cb0> a ns3:AdmissionEMSPrenotification ;
+    ns1:isResultOf <http://stratifai-resources/ontologies/stratifai-data#Procedure_32485007_ac419a97-9c46-446e-bf7b-ea81a0117cb0> ;
+    ns1:procedureContext <http://snomed.info/id/385658003> ;
+    ns1:representsProcedure <http://stratifai-resources/ontologies/stratifai-data#EMSPrenotification_ac419a97-9c46-446e-bf7b-ea81a0117cb0> .
+
+<http://stratifai-resources/ontologies/stratifai-data#ClinicalProcedureSt_AdmissionEMSPrenotification_ems_prenotification_c06ac53e-5704-4ca3-a8ea-6e9c81695237> a ns3:AdmissionEMSPrenotification ;
+    ns1:isResultOf <http://stratifai-resources/ontologies/stratifai-data#Procedure_32485007_c06ac53e-5704-4ca3-a8ea-6e9c81695237> ;
+    ns1:procedureContext <http://snomed.info/id/385658003> ;
+    ns1:representsProcedure <http://stratifai-resources/ontologies/stratifai-data#EMSPrenotification_c06ac53e-5704-4ca3-a8ea-6e9c81695237> .
+
+<http://stratifai-resources/ontologies/stratifai-data#ClinicalProcedureSt_AdmissionEMSPrenotification_ems_prenotification_f52caf27-3195-49c5-814c-119426bc6e84> a ns3:AdmissionEMSPrenotification ;
+    ns1:isResultOf <http://stratifai-resources/ontologies/stratifai-data#Procedure_32485007_f52caf27-3195-49c5-814c-119426bc6e84> ;
+    ns1:procedureContext <http://snomed.info/id/385658003> ;
+    ns1:representsProcedure <http://stratifai-resources/ontologies/stratifai-data#EMSPrenotification_f52caf27-3195-49c5-814c-119426bc6e84> .
+
+<http://stratifai-resources/ontologies/stratifai-data#EMSPrenotification_0c8c2f20-c5cd-4394-98d0-3f8d6e0d4154> a <http://www.semanticweb.org/catimc/resqplus#EMSPrenotification> .
+
+<http://stratifai-resources/ontologies/stratifai-data#EMSPrenotification_1e86ce42-0390-44b3-93f9-5328718fc280> a <http://www.semanticweb.org/catimc/resqplus#EMSPrenotification> .
+
+<http://stratifai-resources/ontologies/stratifai-data#EMSPrenotification_2212d45a-a1f2-4148-9d8c-0faabb9c00ca> a <http://www.semanticweb.org/catimc/resqplus#EMSPrenotification> .
+
+<http://stratifai-resources/ontologies/stratifai-data#EMSPrenotification_24eba441-7ff2-4d0a-97b9-e2953094cafa> a <http://www.semanticweb.org/catimc/resqplus#EMSPrenotification> .
+
+<http://stratifai-resources/ontologies/stratifai-data#EMSPrenotification_5ad92f4a-7454-42dc-8b49-eb8670154055> a <http://www.semanticweb.org/catimc/resqplus#EMSPrenotification> .
+
+<http://stratifai-resources/ontologies/stratifai-data#EMSPrenotification_6dad232d-fbc1-4d84-9277-894c78bad40a> a <http://www.semanticweb.org/catimc/resqplus#EMSPrenotification> .
+
+<http://stratifai-resources/ontologies/stratifai-data#EMSPrenotification_8907bf7c-925b-4202-b5e0-3836c142ede7> a <http://www.semanticweb.org/catimc/resqplus#EMSPrenotification> .
+
+<http://stratifai-resources/ontologies/stratifai-data#EMSPrenotification_ab952a69-a895-49b6-9a15-ef05213e33da> a <http://www.semanticweb.org/catimc/resqplus#EMSPrenotification> .
+
+<http://stratifai-resources/ontologies/stratifai-data#EMSPrenotification_ac419a97-9c46-446e-bf7b-ea81a0117cb0> a <http://www.semanticweb.org/catimc/resqplus#EMSPrenotification> .
+
+<http://stratifai-resources/ontologies/stratifai-data#EMSPrenotification_c06ac53e-5704-4ca3-a8ea-6e9c81695237> a <http://www.semanticweb.org/catimc/resqplus#EMSPrenotification> .
+
+<http://stratifai-resources/ontologies/stratifai-data#EMSPrenotification_f52caf27-3195-49c5-814c-119426bc6e84> a <http://www.semanticweb.org/catimc/resqplus#EMSPrenotification> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_0c8c2f20-c5cd-4394-98d0-3f8d6e0d4154> a ns3:InformationAboutStratifAIProviderOfInformation ;
+    ns2:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_0c8c2f20-c5cd-4394-98d0-3f8d6e0d4154> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_1e86ce42-0390-44b3-93f9-5328718fc280> a ns3:InformationAboutStratifAIProviderOfInformation ;
+    ns2:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_1e86ce42-0390-44b3-93f9-5328718fc280> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_2212d45a-a1f2-4148-9d8c-0faabb9c00ca> a ns3:InformationAboutStratifAIProviderOfInformation ;
+    ns2:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_2212d45a-a1f2-4148-9d8c-0faabb9c00ca> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_24eba441-7ff2-4d0a-97b9-e2953094cafa> a ns3:InformationAboutStratifAIProviderOfInformation ;
+    ns2:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_24eba441-7ff2-4d0a-97b9-e2953094cafa> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_5ad92f4a-7454-42dc-8b49-eb8670154055> a ns3:InformationAboutStratifAIProviderOfInformation ;
+    ns2:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_5ad92f4a-7454-42dc-8b49-eb8670154055> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_6dad232d-fbc1-4d84-9277-894c78bad40a> a ns3:InformationAboutStratifAIProviderOfInformation ;
+    ns2:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_6dad232d-fbc1-4d84-9277-894c78bad40a> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_8907bf7c-925b-4202-b5e0-3836c142ede7> a ns3:InformationAboutStratifAIProviderOfInformation ;
+    ns2:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_8907bf7c-925b-4202-b5e0-3836c142ede7> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_ab952a69-a895-49b6-9a15-ef05213e33da> a ns3:InformationAboutStratifAIProviderOfInformation ;
+    ns2:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_ab952a69-a895-49b6-9a15-ef05213e33da> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_ac419a97-9c46-446e-bf7b-ea81a0117cb0> a ns3:InformationAboutStratifAIProviderOfInformation ;
+    ns2:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_ac419a97-9c46-446e-bf7b-ea81a0117cb0> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_c06ac53e-5704-4ca3-a8ea-6e9c81695237> a ns3:InformationAboutStratifAIProviderOfInformation ;
+    ns2:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_c06ac53e-5704-4ca3-a8ea-6e9c81695237> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_f52caf27-3195-49c5-814c-119426bc6e84> a ns3:InformationAboutStratifAIProviderOfInformation ;
+    ns2:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_f52caf27-3195-49c5-814c-119426bc6e84> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_0c8c2f20-c5cd-4394-98d0-3f8d6e0d4154> a ns3:InformationAboutStratifAISourceOfInformation ;
+    ns2:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAISource_0c8c2f20-c5cd-4394-98d0-3f8d6e0d4154> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_1e86ce42-0390-44b3-93f9-5328718fc280> a ns3:InformationAboutStratifAISourceOfInformation ;
+    ns2:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAISource_1e86ce42-0390-44b3-93f9-5328718fc280> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_2212d45a-a1f2-4148-9d8c-0faabb9c00ca> a ns3:InformationAboutStratifAISourceOfInformation ;
+    ns2:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAISource_2212d45a-a1f2-4148-9d8c-0faabb9c00ca> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_24eba441-7ff2-4d0a-97b9-e2953094cafa> a ns3:InformationAboutStratifAISourceOfInformation ;
+    ns2:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAISource_24eba441-7ff2-4d0a-97b9-e2953094cafa> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_5ad92f4a-7454-42dc-8b49-eb8670154055> a ns3:InformationAboutStratifAISourceOfInformation ;
+    ns2:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAISource_5ad92f4a-7454-42dc-8b49-eb8670154055> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_6dad232d-fbc1-4d84-9277-894c78bad40a> a ns3:InformationAboutStratifAISourceOfInformation ;
+    ns2:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAISource_6dad232d-fbc1-4d84-9277-894c78bad40a> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_8907bf7c-925b-4202-b5e0-3836c142ede7> a ns3:InformationAboutStratifAISourceOfInformation ;
+    ns2:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAISource_8907bf7c-925b-4202-b5e0-3836c142ede7> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_ab952a69-a895-49b6-9a15-ef05213e33da> a ns3:InformationAboutStratifAISourceOfInformation ;
+    ns2:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAISource_ab952a69-a895-49b6-9a15-ef05213e33da> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_ac419a97-9c46-446e-bf7b-ea81a0117cb0> a ns3:InformationAboutStratifAISourceOfInformation ;
+    ns2:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAISource_ac419a97-9c46-446e-bf7b-ea81a0117cb0> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_c06ac53e-5704-4ca3-a8ea-6e9c81695237> a ns3:InformationAboutStratifAISourceOfInformation ;
+    ns2:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAISource_c06ac53e-5704-4ca3-a8ea-6e9c81695237> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_f52caf27-3195-49c5-814c-119426bc6e84> a ns3:InformationAboutStratifAISourceOfInformation ;
+    ns2:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAISource_f52caf27-3195-49c5-814c-119426bc6e84> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Procedure_32485007_0c8c2f20-c5cd-4394-98d0-3f8d6e0d4154> a <http://snomed.info/id/32485007> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Procedure_32485007_1e86ce42-0390-44b3-93f9-5328718fc280> a <http://snomed.info/id/32485007> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Procedure_32485007_2212d45a-a1f2-4148-9d8c-0faabb9c00ca> a <http://snomed.info/id/32485007> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Procedure_32485007_24eba441-7ff2-4d0a-97b9-e2953094cafa> a <http://snomed.info/id/32485007> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Procedure_32485007_5ad92f4a-7454-42dc-8b49-eb8670154055> a <http://snomed.info/id/32485007> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Procedure_32485007_6dad232d-fbc1-4d84-9277-894c78bad40a> a <http://snomed.info/id/32485007> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Procedure_32485007_8907bf7c-925b-4202-b5e0-3836c142ede7> a <http://snomed.info/id/32485007> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Procedure_32485007_ab952a69-a895-49b6-9a15-ef05213e33da> a <http://snomed.info/id/32485007> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Procedure_32485007_ac419a97-9c46-446e-bf7b-ea81a0117cb0> a <http://snomed.info/id/32485007> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Procedure_32485007_c06ac53e-5704-4ca3-a8ea-6e9c81695237> a <http://snomed.info/id/32485007> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Procedure_32485007_f52caf27-3195-49c5-814c-119426bc6e84> a <http://snomed.info/id/32485007> .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_0c8c2f20-c5cd-4394-98d0-3f8d6e0d4154> a ns3:StratifAIProvider .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_1e86ce42-0390-44b3-93f9-5328718fc280> a ns3:StratifAIProvider .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_2212d45a-a1f2-4148-9d8c-0faabb9c00ca> a ns3:StratifAIProvider .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_24eba441-7ff2-4d0a-97b9-e2953094cafa> a ns3:StratifAIProvider .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_5ad92f4a-7454-42dc-8b49-eb8670154055> a ns3:StratifAIProvider .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_6dad232d-fbc1-4d84-9277-894c78bad40a> a ns3:StratifAIProvider .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_8907bf7c-925b-4202-b5e0-3836c142ede7> a ns3:StratifAIProvider .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_ab952a69-a895-49b6-9a15-ef05213e33da> a ns3:StratifAIProvider .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_ac419a97-9c46-446e-bf7b-ea81a0117cb0> a ns3:StratifAIProvider .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_c06ac53e-5704-4ca3-a8ea-6e9c81695237> a ns3:StratifAIProvider .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_f52caf27-3195-49c5-814c-119426bc6e84> a ns3:StratifAIProvider .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAISource_0c8c2f20-c5cd-4394-98d0-3f8d6e0d4154> a ns3:StratifAISource .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAISource_1e86ce42-0390-44b3-93f9-5328718fc280> a ns3:StratifAISource .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAISource_2212d45a-a1f2-4148-9d8c-0faabb9c00ca> a ns3:StratifAISource .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAISource_24eba441-7ff2-4d0a-97b9-e2953094cafa> a ns3:StratifAISource .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAISource_5ad92f4a-7454-42dc-8b49-eb8670154055> a ns3:StratifAISource .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAISource_6dad232d-fbc1-4d84-9277-894c78bad40a> a ns3:StratifAISource .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAISource_8907bf7c-925b-4202-b5e0-3836c142ede7> a ns3:StratifAISource .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAISource_ab952a69-a895-49b6-9a15-ef05213e33da> a ns3:StratifAISource .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAISource_ac419a97-9c46-446e-bf7b-ea81a0117cb0> a ns3:StratifAISource .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAISource_c06ac53e-5704-4ca3-a8ea-6e9c81695237> a ns3:StratifAISource .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAISource_f52caf27-3195-49c5-814c-119426bc6e84> a ns3:StratifAISource .
+

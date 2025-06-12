@@ -1,0 +1,29 @@
+@prefix ns1: <http://purl.org/biotop/btl2.owl#> .
+@prefix ns2: <http://www.semanticweb.org/catimc/SemanticCommonDataModel#> .
+@prefix ns3: <http://stratifai#> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Case_2f2f4267-9831-44ef-a58a-ff3fa0d8dbb7> a ns3:ClinicalCase ;
+    ns3:caseId "2f2f4267-9831-44ef-a58a-ff3fa0d8dbb7" ;
+    ns2:hasInformationAboutProvider <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_2f2f4267-9831-44ef-a58a-ff3fa0d8dbb7>,
+        <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_2f2f4267-9831-44ef-a58a-ff3fa0d8dbb7> ;
+    ns2:hasPart <http://stratifai-resources/ontologies/stratifai-data#ClinicalProcedureSt_CVTTreatment_cvt_treatment_thrombectomy_2f2f4267-9831-44ef-a58a-ff3fa0d8dbb7> .
+
+<http://stratifai-resources/ontologies/stratifai-data#233422002_2f2f4267-9831-44ef-a58a-ff3fa0d8dbb7> a <http://snomed.info/id/233422002> .
+
+<http://stratifai-resources/ontologies/stratifai-data#ClinicalProcedureSt_CVTTreatment_cvt_treatment_thrombectomy_2f2f4267-9831-44ef-a58a-ff3fa0d8dbb7> a ns3:CVTTreatment ;
+    ns2:isResultOf <http://stratifai-resources/ontologies/stratifai-data#Procedure_277132007_2f2f4267-9831-44ef-a58a-ff3fa0d8dbb7> ;
+    ns2:procedureContext <http://snomed.info/id/385660001> ;
+    ns2:representsProcedure <http://stratifai-resources/ontologies/stratifai-data#233422002_2f2f4267-9831-44ef-a58a-ff3fa0d8dbb7> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_2f2f4267-9831-44ef-a58a-ff3fa0d8dbb7> a ns3:InformationAboutStratifAIProviderOfInformation ;
+    ns1:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_2f2f4267-9831-44ef-a58a-ff3fa0d8dbb7> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_2f2f4267-9831-44ef-a58a-ff3fa0d8dbb7> a ns3:InformationAboutStratifAISourceOfInformation ;
+    ns1:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAISource_2f2f4267-9831-44ef-a58a-ff3fa0d8dbb7> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Procedure_277132007_2f2f4267-9831-44ef-a58a-ff3fa0d8dbb7> a <http://snomed.info/id/277132007> .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_2f2f4267-9831-44ef-a58a-ff3fa0d8dbb7> a ns3:StratifAIProvider .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAISource_2f2f4267-9831-44ef-a58a-ff3fa0d8dbb7> a ns3:StratifAISource .
+

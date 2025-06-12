@@ -1,0 +1,82 @@
+@prefix ns1: <http://purl.org/biotop/btl2.owl#> .
+@prefix ns2: <http://stratifai#> .
+@prefix ns3: <http://www.semanticweb.org/catimc/SemanticCommonDataModel#> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Case_77661181-21ac-4621-a395-37b1e82bab45> a ns2:ClinicalCase ;
+    ns2:caseId "77661181-21ac-4621-a395-37b1e82bab45" ;
+    ns3:hasInformationAboutProvider <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_77661181-21ac-4621-a395-37b1e82bab45>,
+        <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_77661181-21ac-4621-a395-37b1e82bab45> ;
+    ns3:hasPart <http://stratifai-resources/ontologies/stratifai-data#ObservationResultSt_TimeSymptomTIAlasts_tia_symptoms_duration_77661181-21ac-4621-a395-37b1e82bab45> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Case_9ed8189e-5463-447d-a912-646e120a83a7> a ns2:ClinicalCase ;
+    ns2:caseId "9ed8189e-5463-447d-a912-646e120a83a7" ;
+    ns3:hasInformationAboutProvider <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_9ed8189e-5463-447d-a912-646e120a83a7>,
+        <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_9ed8189e-5463-447d-a912-646e120a83a7> ;
+    ns3:hasPart <http://stratifai-resources/ontologies/stratifai-data#ObservationResultSt_TimeSymptomTIAlasts_tia_symptoms_duration_9ed8189e-5463-447d-a912-646e120a83a7> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Case_c06ac53e-5704-4ca3-a8ea-6e9c81695237> a ns2:ClinicalCase ;
+    ns2:caseId "c06ac53e-5704-4ca3-a8ea-6e9c81695237" ;
+    ns3:hasInformationAboutProvider <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_c06ac53e-5704-4ca3-a8ea-6e9c81695237>,
+        <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_c06ac53e-5704-4ca3-a8ea-6e9c81695237> ;
+    ns3:hasPart <http://stratifai-resources/ontologies/stratifai-data#ObservationResultSt_TimeSymptomTIAlasts_tia_symptoms_duration_c06ac53e-5704-4ca3-a8ea-6e9c81695237> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_77661181-21ac-4621-a395-37b1e82bab45> a ns2:InformationAboutStratifAIProviderOfInformation ;
+    ns1:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_77661181-21ac-4621-a395-37b1e82bab45> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_9ed8189e-5463-447d-a912-646e120a83a7> a ns2:InformationAboutStratifAIProviderOfInformation ;
+    ns1:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_9ed8189e-5463-447d-a912-646e120a83a7> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_c06ac53e-5704-4ca3-a8ea-6e9c81695237> a ns2:InformationAboutStratifAIProviderOfInformation ;
+    ns1:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_c06ac53e-5704-4ca3-a8ea-6e9c81695237> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_77661181-21ac-4621-a395-37b1e82bab45> a ns2:InformationAboutStratifAISourceOfInformation ;
+    ns1:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAISource_77661181-21ac-4621-a395-37b1e82bab45> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_9ed8189e-5463-447d-a912-646e120a83a7> a ns2:InformationAboutStratifAISourceOfInformation ;
+    ns1:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAISource_9ed8189e-5463-447d-a912-646e120a83a7> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_c06ac53e-5704-4ca3-a8ea-6e9c81695237> a ns2:InformationAboutStratifAISourceOfInformation ;
+    ns1:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAISource_c06ac53e-5704-4ca3-a8ea-6e9c81695237> .
+
+<http://stratifai-resources/ontologies/stratifai-data#ObservationResultSt_TimeSymptomTIAlasts_tia_symptoms_duration_77661181-21ac-4621-a395-37b1e82bab45> a ns2:TimeSymptomTIAlasts ;
+    ns3:hasObservable <http://www.semanticweb.org/catimc/resqplus#TimeSymptomTIAlastsObservable> ;
+    ns3:hasObservableValue <http://stratifai-resources/ontologies/stratifai-data#PrimitiveValue_tia_symptoms_duration_77661181-21ac-4621-a395-37b1e82bab45> ;
+    ns3:isResultOf <http://stratifai-resources/ontologies/stratifai-data#Procedure_277132007_77661181-21ac-4621-a395-37b1e82bab45> .
+
+<http://stratifai-resources/ontologies/stratifai-data#ObservationResultSt_TimeSymptomTIAlasts_tia_symptoms_duration_9ed8189e-5463-447d-a912-646e120a83a7> a ns2:TimeSymptomTIAlasts ;
+    ns3:hasObservable <http://www.semanticweb.org/catimc/resqplus#TimeSymptomTIAlastsObservable> ;
+    ns3:hasObservableValue <http://stratifai-resources/ontologies/stratifai-data#PrimitiveValue_tia_symptoms_duration_9ed8189e-5463-447d-a912-646e120a83a7> ;
+    ns3:isResultOf <http://stratifai-resources/ontologies/stratifai-data#Procedure_277132007_9ed8189e-5463-447d-a912-646e120a83a7> .
+
+<http://stratifai-resources/ontologies/stratifai-data#ObservationResultSt_TimeSymptomTIAlasts_tia_symptoms_duration_c06ac53e-5704-4ca3-a8ea-6e9c81695237> a ns2:TimeSymptomTIAlasts ;
+    ns3:hasObservable <http://www.semanticweb.org/catimc/resqplus#TimeSymptomTIAlastsObservable> ;
+    ns3:hasObservableValue <http://stratifai-resources/ontologies/stratifai-data#PrimitiveValue_tia_symptoms_duration_c06ac53e-5704-4ca3-a8ea-6e9c81695237> ;
+    ns3:isResultOf <http://stratifai-resources/ontologies/stratifai-data#Procedure_277132007_c06ac53e-5704-4ca3-a8ea-6e9c81695237> .
+
+<http://stratifai-resources/ontologies/stratifai-data#PrimitiveValue_tia_symptoms_duration_77661181-21ac-4621-a395-37b1e82bab45> a ns3:QuantitativeResultValue ;
+    ns1:hasValue "< 10 minutes" .
+
+<http://stratifai-resources/ontologies/stratifai-data#PrimitiveValue_tia_symptoms_duration_9ed8189e-5463-447d-a912-646e120a83a7> a ns3:QuantitativeResultValue ;
+    ns1:hasValue "10 to 59 minutes" .
+
+<http://stratifai-resources/ontologies/stratifai-data#PrimitiveValue_tia_symptoms_duration_c06ac53e-5704-4ca3-a8ea-6e9c81695237> a ns3:QuantitativeResultValue ;
+    ns1:hasValue "< 10 minutes" .
+
+<http://stratifai-resources/ontologies/stratifai-data#Procedure_277132007_77661181-21ac-4621-a395-37b1e82bab45> a <http://snomed.info/id/277132007> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Procedure_277132007_9ed8189e-5463-447d-a912-646e120a83a7> a <http://snomed.info/id/277132007> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Procedure_277132007_c06ac53e-5704-4ca3-a8ea-6e9c81695237> a <http://snomed.info/id/277132007> .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_77661181-21ac-4621-a395-37b1e82bab45> a ns2:StratifAIProvider .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_9ed8189e-5463-447d-a912-646e120a83a7> a ns2:StratifAIProvider .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_c06ac53e-5704-4ca3-a8ea-6e9c81695237> a ns2:StratifAIProvider .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAISource_77661181-21ac-4621-a395-37b1e82bab45> a ns2:StratifAISource .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAISource_9ed8189e-5463-447d-a912-646e120a83a7> a ns2:StratifAISource .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAISource_c06ac53e-5704-4ca3-a8ea-6e9c81695237> a ns2:StratifAISource .
+

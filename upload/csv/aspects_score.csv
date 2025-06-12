@@ -1,0 +1,9 @@
+field_id,pattern_type,source_procedure,procedure_part,procedure_result,ontology_mapping,observable,finding,procedure,OBLIGATORY,value_type,categorical_value,categorical_ontology_mapping,procedure_reason,procedure_location,measurement_unit,procedure_frequency,temporal_context,statement_context,case_id,field_value
+aspects_score,ObservationResultStatement,http://snomed.info/id/1290003007,,,ASPECTScore,http://snomed.info/id/1290004001,,,1.0,Integer,,,,,,,,,8907bf7c-925b-4202-b5e0-3836c142ede7,4
+aspects_score,ObservationResultStatement,http://snomed.info/id/1290003007,,,ASPECTScore,http://snomed.info/id/1290004001,,,1.0,Integer,,,,,,,,,24eba441-7ff2-4d0a-97b9-e2953094cafa,5
+aspects_score,ObservationResultStatement,http://snomed.info/id/1290003007,,,ASPECTScore,http://snomed.info/id/1290004001,,,1.0,Integer,,,,,,,,,1c39ea5d-9914-4c80-b366-165b3dbd098b,9
+aspects_score,ObservationResultStatement,http://snomed.info/id/1290003007,,,ASPECTScore,http://snomed.info/id/1290004001,,,1.0,Integer,,,,,,,,,6700c066-b3de-4852-9793-6c6c1037dadc,4
+aspects_score,ObservationResultStatement,http://snomed.info/id/1290003007,,,ASPECTScore,http://snomed.info/id/1290004001,,,1.0,Integer,,,,,,,,,87708b4a-dd2e-477a-9d13-33db5a80ce17,9
+aspects_score,ObservationResultStatement,http://snomed.info/id/1290003007,,,ASPECTScore,http://snomed.info/id/1290004001,,,1.0,Integer,,,,,,,,,a6fc0104-235a-4eef-a8be-b98113adcea0,8
+aspects_score,ObservationResultStatement,http://snomed.info/id/1290003007,,,ASPECTScore,http://snomed.info/id/1290004001,,,1.0,Integer,,,,,,,,,af644c7c-f11e-4953-84c7-8201ea2aa360,10
+aspects_score,ObservationResultStatement,http://snomed.info/id/1290003007,,,ASPECTScore,http://snomed.info/id/1290004001,,,1.0,Integer,,,,,,,,,023ccd87-fc07-441e-8ac5-a10f3dff2cb9,5

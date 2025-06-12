@@ -1,0 +1,48 @@
+@prefix ns1: <http://purl.org/biotop/btl2.owl#> .
+@prefix ns2: <http://www.semanticweb.org/catimc/SemanticCommonDataModel#> .
+@prefix ns3: <http://stratifai#> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Case_a6fc0104-235a-4eef-a8be-b98113adcea0> a ns3:ClinicalCase ;
+    ns3:caseId "a6fc0104-235a-4eef-a8be-b98113adcea0" ;
+    ns2:hasInformationAboutProvider <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_a6fc0104-235a-4eef-a8be-b98113adcea0>,
+        <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_a6fc0104-235a-4eef-a8be-b98113adcea0> ;
+    ns2:hasPart <http://stratifai-resources/ontologies/stratifai-data#ClinicalSituationSt_FindingsOnCT_MRAfterIVT_MT_post_treatment_brain_infarct_a6fc0104-235a-4eef-a8be-b98113adcea0> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Case_af644c7c-f11e-4953-84c7-8201ea2aa360> a ns3:ClinicalCase ;
+    ns3:caseId "af644c7c-f11e-4953-84c7-8201ea2aa360" ;
+    ns2:hasInformationAboutProvider <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_af644c7c-f11e-4953-84c7-8201ea2aa360>,
+        <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_af644c7c-f11e-4953-84c7-8201ea2aa360> ;
+    ns2:hasPart <http://stratifai-resources/ontologies/stratifai-data#ClinicalSituationSt_FindingsOnCT_MRAfterIVT_MT_post_treatment_brain_infarct_af644c7c-f11e-4953-84c7-8201ea2aa360> .
+
+<http://stratifai-resources/ontologies/stratifai-data#ClinicalSituationSt_FindingsOnCT_MRAfterIVT_MT_post_treatment_brain_infarct_a6fc0104-235a-4eef-a8be-b98113adcea0> a ns3:FindingsOnCT_MRAfterIVT_MT ;
+    ns2:isResultOf <http://stratifai-resources/ontologies/stratifai-data#Procedure_PostAcuteCareProcedure_a6fc0104-235a-4eef-a8be-b98113adcea0> ;
+    ns2:representsSituation <http://www.semanticweb.org/catimc/resqplus#BrainInfarctAfterIVT_MT> .
+
+<http://stratifai-resources/ontologies/stratifai-data#ClinicalSituationSt_FindingsOnCT_MRAfterIVT_MT_post_treatment_brain_infarct_af644c7c-f11e-4953-84c7-8201ea2aa360> a ns3:FindingsOnCT_MRAfterIVT_MT ;
+    ns2:isResultOf <http://stratifai-resources/ontologies/stratifai-data#Procedure_PostAcuteCareProcedure_af644c7c-f11e-4953-84c7-8201ea2aa360> ;
+    ns2:representsSituation <http://www.semanticweb.org/catimc/resqplus#BrainInfarctAfterIVT_MT> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_a6fc0104-235a-4eef-a8be-b98113adcea0> a ns3:InformationAboutStratifAIProviderOfInformation ;
+    ns1:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_a6fc0104-235a-4eef-a8be-b98113adcea0> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_af644c7c-f11e-4953-84c7-8201ea2aa360> a ns3:InformationAboutStratifAIProviderOfInformation ;
+    ns1:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_af644c7c-f11e-4953-84c7-8201ea2aa360> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_a6fc0104-235a-4eef-a8be-b98113adcea0> a ns3:InformationAboutStratifAISourceOfInformation ;
+    ns1:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAISource_a6fc0104-235a-4eef-a8be-b98113adcea0> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_af644c7c-f11e-4953-84c7-8201ea2aa360> a ns3:InformationAboutStratifAISourceOfInformation ;
+    ns1:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAISource_af644c7c-f11e-4953-84c7-8201ea2aa360> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Procedure_PostAcuteCareProcedure_a6fc0104-235a-4eef-a8be-b98113adcea0> a <http://www.semanticweb.org/catimc/resqplus#PostAcuteCareProcedure> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Procedure_PostAcuteCareProcedure_af644c7c-f11e-4953-84c7-8201ea2aa360> a <http://www.semanticweb.org/catimc/resqplus#PostAcuteCareProcedure> .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_a6fc0104-235a-4eef-a8be-b98113adcea0> a ns3:StratifAIProvider .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_af644c7c-f11e-4953-84c7-8201ea2aa360> a ns3:StratifAIProvider .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAISource_a6fc0104-235a-4eef-a8be-b98113adcea0> a ns3:StratifAISource .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAISource_af644c7c-f11e-4953-84c7-8201ea2aa360> a ns3:StratifAISource .
+

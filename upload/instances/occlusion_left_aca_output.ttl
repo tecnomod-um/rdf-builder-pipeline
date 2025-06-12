@@ -1,0 +1,50 @@
+@prefix ns1: <http://www.semanticweb.org/catimc/SemanticCommonDataModel#> .
+@prefix ns2: <http://stratifai#> .
+@prefix ns3: <http://purl.org/biotop/btl2.owl#> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Case_24eba441-7ff2-4d0a-97b9-e2953094cafa> a ns2:ClinicalCase ;
+    ns2:caseId "24eba441-7ff2-4d0a-97b9-e2953094cafa" ;
+    ns1:hasInformationAboutProvider <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_24eba441-7ff2-4d0a-97b9-e2953094cafa>,
+        <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_24eba441-7ff2-4d0a-97b9-e2953094cafa> ;
+    ns1:hasPart <http://stratifai-resources/ontologies/stratifai-data#ClinicalSituationSt_ArterialOcclusion_occlusion_left_aca_24eba441-7ff2-4d0a-97b9-e2953094cafa> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Case_af644c7c-f11e-4953-84c7-8201ea2aa360> a ns2:ClinicalCase ;
+    ns2:caseId "af644c7c-f11e-4953-84c7-8201ea2aa360" ;
+    ns1:hasInformationAboutProvider <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_af644c7c-f11e-4953-84c7-8201ea2aa360>,
+        <http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_af644c7c-f11e-4953-84c7-8201ea2aa360> ;
+    ns1:hasPart <http://stratifai-resources/ontologies/stratifai-data#ClinicalSituationSt_ArterialOcclusion_occlusion_left_aca_af644c7c-f11e-4953-84c7-8201ea2aa360> .
+
+<http://stratifai-resources/ontologies/stratifai-data#ClinicalSituationSt_ArterialOcclusion_occlusion_left_aca_24eba441-7ff2-4d0a-97b9-e2953094cafa> a ns2:ArterialOcclusion ;
+    ns1:isResultOf <http://stratifai-resources/ontologies/stratifai-data#MRDWI&FLAIR&MRangiography&MRPerfusion_24eba441-7ff2-4d0a-97b9-e2953094cafa>,
+        <http://stratifai-resources/ontologies/stratifai-data#Procedure_165197003_24eba441-7ff2-4d0a-97b9-e2953094cafa> ;
+    ns1:representsSituation <http://www.semanticweb.org/catimc/resqplus#AnteriorCerebralArteryLeftOcclusion> .
+
+<http://stratifai-resources/ontologies/stratifai-data#ClinicalSituationSt_ArterialOcclusion_occlusion_left_aca_af644c7c-f11e-4953-84c7-8201ea2aa360> a ns2:ArterialOcclusion ;
+    ns1:isResultOf <http://stratifai-resources/ontologies/stratifai-data#MRDWI&FLAIR&MRangiography&MRPerfusion_af644c7c-f11e-4953-84c7-8201ea2aa360>,
+        <http://stratifai-resources/ontologies/stratifai-data#Procedure_165197003_af644c7c-f11e-4953-84c7-8201ea2aa360> ;
+    ns1:representsSituation <http://www.semanticweb.org/catimc/resqplus#AnteriorCerebralArteryLeftOcclusion> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_24eba441-7ff2-4d0a-97b9-e2953094cafa> a ns2:InformationAboutStratifAIProviderOfInformation ;
+    ns3:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_24eba441-7ff2-4d0a-97b9-e2953094cafa> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAIProviderOfInformation_af644c7c-f11e-4953-84c7-8201ea2aa360> a ns2:InformationAboutStratifAIProviderOfInformation ;
+    ns3:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_af644c7c-f11e-4953-84c7-8201ea2aa360> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_24eba441-7ff2-4d0a-97b9-e2953094cafa> a ns2:InformationAboutStratifAISourceOfInformation ;
+    ns3:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAISource_24eba441-7ff2-4d0a-97b9-e2953094cafa> .
+
+<http://stratifai-resources/ontologies/stratifai-data#InformationAboutStratifAISourceOfInformation_af644c7c-f11e-4953-84c7-8201ea2aa360> a ns2:InformationAboutStratifAISourceOfInformation ;
+    ns3:represents <http://stratifai-resources/ontologies/stratifai-data#StratifAISource_af644c7c-f11e-4953-84c7-8201ea2aa360> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Procedure_165197003_24eba441-7ff2-4d0a-97b9-e2953094cafa> a <http://snomed.info/id/165197003> .
+
+<http://stratifai-resources/ontologies/stratifai-data#Procedure_165197003_af644c7c-f11e-4953-84c7-8201ea2aa360> a <http://snomed.info/id/165197003> .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_24eba441-7ff2-4d0a-97b9-e2953094cafa> a ns2:StratifAIProvider .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAIProvider_af644c7c-f11e-4953-84c7-8201ea2aa360> a ns2:StratifAIProvider .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAISource_24eba441-7ff2-4d0a-97b9-e2953094cafa> a ns2:StratifAISource .
+
+<http://stratifai-resources/ontologies/stratifai-data#StratifAISource_af644c7c-f11e-4953-84c7-8201ea2aa360> a ns2:StratifAISource .
+

@@ -1,6 +1,6 @@
 import csv
 import argparse
-
+import templates.template_manager as template_manager
 
 def generate_observation_result_statement(row,csv_file_name):
     rule_name = row['ontology_mapping'].strip() + '_' + row['field_id'].strip()
@@ -337,182 +337,116 @@ def generate_rule(row, pattern_handlers,csv_file_name):
         print(f"Tipo de patrón desconocido o sin manejador: {pattern_type}")  
         return ''  
 
+def parse_arguments():
+    """
+    Parses command line arguments for input and output file paths.
+    Returns:
+        argparse.Namespace: Contains the input and output file paths.
+    """
 
-def main():
-    parser = argparse.ArgumentParser(description="Genera archivos YARRRML a partir de un CSV")
-    parser.add_argument('--input', type=str, help='Ruta completa al archivo CSV de entrada')
-    parser.add_argument('--output', type=str, help='Ruta completa al archivo YARRRML de salida')
-    args = parser.parse_args()
+    parser = argparse.ArgumentParser(
+        description="Genera archivos YARRRML a partir de un CSV"
+    )
+    parser.add_argument(
+        '--input', type=str, required=True,
+        help='Ruta completa al archivo CSV de entrada'
+    )
+    parser.add_argument(
+        '--output', type=str, required=True,
+        help='Ruta completa al archivo YARRRML de salida'
+    )
+    return parser.parse_args()
 
-    csv_file_name = args.input
-    output_file_path = args.output
-    pattern_handlers = {
-        'ObservationResultStatement': [generate_observation_result_statement, generate_procedure, generate_observation_result],
-        'ClinicalSituationStatement': [generate_clinical_situation_statement,generate_procedure],
-        'ClinicalProcedureStatement': [generate_clinical_procedure_statement,generate_represented_procedure, generate_procedure ]
+
+def load_template(csv_file_name):
+    """
+    Reads the YARRRML template from the template manager.
+    Raises:
+        FileNotFoundError: If the template file does not exist.
+    Returns:
+        str: The content of the YARRRML template file.
+    """
+    return template_manager.generate_yarrrml_template(csv_file_name)
+
+
+def load_pattern_handlers():
+    """
+    Returns a dictionary mapping pattern types to their respective handler functions.
+    """
+    return {
+        'ObservationResultStatement': [
+            generate_observation_result_statement,
+            generate_procedure,
+            generate_observation_result
+        ],
+        'ClinicalSituationStatement': [
+            generate_clinical_situation_statement,
+            generate_procedure
+        ],
+        'ClinicalProcedureStatement': [
+            generate_clinical_procedure_statement,
+            generate_represented_procedure,
+            generate_procedure
+        ]
     }
 
-    yarrml_template = f"""
-    authors: Catalina Martinez-Costa <cmartinezcosta@um.es>
-    prefixes:
-      base: http://stratifai#
-      stratifai: http://stratifai#
-      sct: http://snomed.info/id/
-      scdm: http://www.semanticweb.org/catimc/SemanticCommonDataModel#
-      btl2: http://purl.org/biotop/btl2.owl#
-      fno:  https://w3id.org/function/ontology# 
-      fnom: https://w3id.org/function/vocabulary/mapping#
-      ex: http://example.org/functions#
-      stratifai-function: http://ontology.stratifai.um.es/STRATIF-AI_Functions/
-      grel: http://users.ugent.be/bjdmeest/function/grel.ttl#
-      rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns#
-      xsd: http://www.w3.org/2001/XMLSchema#
 
-
-    mappings:
-
-        ClinicalCase:
-            sources: 
-                    - ['{csv_file_name}~csv']
-            s: base:Case_$(case_id)
-            po:
-              - [a, stratifai:ClinicalCase]
-              - [stratifai:caseId, $(case_id), xsd:string]
-              - [scdm:hasInformationAboutProvider, base:InformationAboutStratifAIProviderOfInformation_$(case_id)~iri]
-              - [scdm:hasInformationAboutProvider, base:InformationAboutStratifAISourceOfInformation_$(case_id)~iri]
-              - p: scdm:hasPart
-                o:
-                - function: stratifai-function:generatePart
-                  parameters:
-                  - parameter: grel:valueParam
-                    value: $(pattern_type)
-                  - parameter: grel:valueParam1
-                    value: $(field_id)
-                  - parameter: grel:valueParam2
-                    value: $(ontology_mapping)
-                  - parameter: grel:valueParam3
-                    value: $(case_id)
-                  type: iri
-              #- [scdm:hasPart, base:AdmissionAge_$(case_id)~iri]
-        
-        InformationAboutProvider:
-            sources: 
-                    - ['{csv_file_name}~csv']
-            s: base:InformationAboutStratifAIProviderOfInformation_$(case_id)
-            po:
-              - [a, stratifai:InformationAboutStratifAIProviderOfInformation]
-              - [btl2:represents, base:StratifAIProvider_$(case_id)~iri]
-
-        InformationAboutSource:
-            sources: 
-                    - ['{csv_file_name}~csv']
-            s: base:InformationAboutStratifAISourceOfInformation_$(case_id)
-            po:
-              - [a, stratifai:InformationAboutStratifAISourceOfInformation]
-              - [btl2:represents, base:StratifAISource_$(case_id)~iri]
-        
-        StratifAIProvider:
-            sources: 
-                    - ['{csv_file_name}~csv']
-            s: base:StratifAIProvider_$(case_id)
-            po:
-              - [a, stratifai:StratifAIProvider]
-              #- [base:providerId,$(provider_id)]
-              #- [rdfs:label, $(provider)]
-              #- [stratifai:providerDepartment, $(department)]
-              #- [stratifai:providerHospitalType, $(hospital_type)]  
-
-        StratifAISource:
-            sources: 
-                    - ['{csv_file_name}~csv']
-            s: base:StratifAISource_$(case_id)
-            po:
-              - [a, stratifai:StratifAISource]
-              #- [base:sourceId,$(source)]        
-        
-        StatementTemporalContext:
-            sources: 
-                - ['{csv_file_name}~csv']
-            s:
-            - function: stratifai-function:generate_temporal_context
-              parameters:
-              - parameter: grel:valueParam
-                value: $(temporal_context)
-              type: iri
-            po:
-                - [a, $(temporal_context)~iri]
-            
-        StatementContext:
-            sources: 
-                - ['{csv_file_name}~csv']
-            s:
-            - function: stratifai-function:generate_statement_context
-              parameters:
-              - parameter: grel:valueParam
-                value: $(statement_context)
-              type: iri
-            po:
-                - [a, $(statement_context)~iri]
-
-        ProcedureLocation:
-            sources: 
-                - ['{csv_file_name}~csv']
-            s:
-            - function: stratifai-function:generate_procedure_location
-              parameters:
-              - parameter: grel:valueParam
-                value: $(procedure_location)
-              type: iri
-            po:
-                - [a, $(procedure_location)~iri]
-
-        ProcedureReason:
-            sources: 
-                - ['{csv_file_name}~csv']
-            s:
-            - function: stratifai-function:generate_procedure_reason
-              parameters:
-              - parameter: grel:valueParam
-                value: $(procedure_reason)
-              type: iri
-            po:
-                - [a, $(procedure_reason)~iri]
-        
-        ProcedureDateTime:        
-          sources: 
-              - ['{csv_file_name}~csv']
-          s: 
-          - function: stratifai-function:generate_procedure_dateTime
-            parameters: 
-            - parameter: grel:valueParam
-              value: $(procedure)
-            - parameter: grel:valueParam1
-              value: $(categorical_ontology_mapping)
-            type: iri
-          po:
-            - [a, $(categorical_ontology_mapping)~iri]  
+def generate_rules(csv_file_name, pattern_handlers):
+    """
+    Reads a CSV file and generates YARRRML rules based on the patterns defined in pattern_handlers.
+    Args:
+        csv_file_name (str): Path to the input CSV file.
+        pattern_handlers (dict): Dictionary mapping pattern types to handler functions.
+    Returns:
+        list: List of generated YARRRML rules.
     """
 
     rules = []
     field_ids_seen = set()
 
+    # Leer CSV y acumular reglas, saltando duplicados
     with open(csv_file_name, mode='r', encoding='utf-8-sig') as file:
         csv_reader = csv.DictReader(file)
         for row in csv_reader:
             field_id = row['field_id'].strip()
             if field_id in field_ids_seen:
-                break  # Detener el procesamiento si el field_id ya ha sido visto
+                continue   # Saltar duplicados, no romper el bucle
             field_ids_seen.add(field_id)
-            rule = generate_rule(row, pattern_handlers,csv_file_name)
+
             print(f"field:{field_id}")
-            if rule != '':
+            rule = generate_rule(row, pattern_handlers, csv_file_name)
+            if rule:
                 rules.append(rule)
-                # Combinar la plantilla con los mapeos generados
-                yarrml_output = yarrml_template + '\n'.join(rules)
-                # Escribir el YARRRML generado en el archivo
-                with open(output_file_path, 'w') as output_file:
-                    output_file.write(yarrml_output)
-                    print(f"YARRRML generado guardado en: {output_file_path}")
+
+    return rules
+    
+
+def write_output(template, rules, output_file_path):
+    """
+    Writes the YARRRML output to a file, combining the template and generated rules.
+    Args:
+        template (str): The YARRRML template.
+        rules (list): List of generated rules.
+        output_file_path (str): Path to the output file.
+    """
+    yarrml_output = template + '\n'.join(rules)
+    with open(output_file_path, 'w', encoding='utf-8') as output_file:
+        output_file.write(yarrml_output)
+        print(f"YARRRML generado guardado en: {output_file_path}")
+
+def main():
+    args = parse_arguments()
+
+    csv_file_name = args.input
+    output_file_path = args.output
+
+    pattern_handlers = load_pattern_handlers()
+    yarrml_template = load_template(csv_file_name)
+
+    rules = generate_rules(csv_file_name, pattern_handlers)
+    write_output(yarrml_template, rules, output_file_path)
+
+    
 
 if __name__ == "__main__":
     main()
