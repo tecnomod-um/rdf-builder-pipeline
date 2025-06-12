@@ -1,6 +1,8 @@
 import csv
 import argparse
-import templates.template_manager as template_manager
+import template_manager
+
+### GENERATION FUNCTIONS ###
 
 def generate_observation_result_statement(row,csv_file_name):
     rule_name = row['ontology_mapping'].strip() + '_' + row['field_id'].strip()
@@ -67,24 +69,12 @@ def generate_procedure(row,csv_file_name):
                 - [a, {source_procedure_iri}~iri]
     """
 
-    # Handling procedure parts if they exist
-    #procedure_part = row['procedure_part'].strip()
-    #if procedure_part:
-    #    if '#' in procedure_part:
-    #        procedure_part = procedure_part.split('#')[-1]
-    #    else:
-    #        procedure_part = procedure_part.split('/')[-1]
-    #
-        # Link the procedure part as a sub-process of the main procedure
-    #    regla += f"            - [scdm:isSubProcessOf, base:Procedure_{procedure_part}_$(case_id)~iri]\n"
-
     return regla
 
 
 def generate_observation_result(row,csv_file_name):
     rule_name = row['ontology_mapping'].strip() + '_' + row['field_id'].strip()
     field_id = row['field_id'].strip()
-    field_value = row['field_value'].strip()
     value_type = row['value_type'].strip().lower()
 
     # Mapping value types to XSD types
@@ -114,11 +104,7 @@ def generate_clinical_situation_statement(row,csv_file_name):
     ontology_mapping = row['ontology_mapping'].strip()
     source_procedure = extract_last_part(row['source_procedure'].strip())
     categorical_ontology_mapping = row['categorical_ontology_mapping'].strip()
-    field_id = row['field_id'].strip()
-    rule_name = ontology_mapping+'_'+field_id
     value_type = row['value_type'].strip()
-    additional_rules = ''
-
 
     regla = f"""
         {ontology_mapping}_ClinicalSituationStatement:
@@ -334,8 +320,11 @@ def generate_rule(row, pattern_handlers,csv_file_name):
                 rules.append(rule)
         return "\n".join(rules)
     else:
-        print(f"Tipo de patrón desconocido o sin manejador: {pattern_type}")  
+        print(f"Unknown or unhandled pattern type: {pattern_type}")  
         return ''  
+    
+
+### MAIN FUNCTIONS ###
 
 def parse_arguments():
     """
@@ -345,15 +334,15 @@ def parse_arguments():
     """
 
     parser = argparse.ArgumentParser(
-        description="Genera archivos YARRRML a partir de un CSV"
+        description="Generates YARRRML files from a CSV"
     )
     parser.add_argument(
         '--input', type=str, required=True,
-        help='Ruta completa al archivo CSV de entrada'
+        help='Path to the input CSV file'
     )
     parser.add_argument(
         '--output', type=str, required=True,
-        help='Ruta completa al archivo YARRRML de salida'
+        help='Path to the output YARRRML file'
     )
     return parser.parse_args()
 
