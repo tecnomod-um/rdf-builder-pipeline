@@ -7,7 +7,7 @@ REQUIRED_MAPPING_COLS = {
 }
 REQUIRED_DATA_COLS = {'case_id'}
 
-# Initiate.py path constants
+# Initiate.py constants
 PREPROCESSED_FOLDER = 'preprocessed_data'
 PREPROCESSED_FILENAME = 'preprocessed_data.csv'
 CSV_FOLDER = 'csv'
