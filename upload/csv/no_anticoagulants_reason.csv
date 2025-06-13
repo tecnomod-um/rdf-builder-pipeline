@@ -1,4 +1,0 @@
-field_id,pattern_type,source_procedure,procedure_part,procedure_result,ontology_mapping,observable,finding,procedure,OBLIGATORY,value_type,categorical_value,categorical_ontology_mapping,procedure_reason,procedure_location,measurement_unit,procedure_frequency,temporal_context,statement_context,case_id,field_value
-no_anticoagulants_reason,ClinicalProcedureStatement,,,,,,,,1.0,Categorical,allergy,,,,,,,,8907bf7c-925b-4202-b5e0-3836c142ede7,allergy
-no_anticoagulants_reason,ClinicalProcedureStatement,,,,,,,,1.0,Categorical,allergy,,,,,,,,0c8c2f20-c5cd-4394-98d0-3f8d6e0d4154,allergy
-no_anticoagulants_reason,ClinicalProcedureStatement,,,,,,,,1.0,Categorical,allergy,,,,,,,,87708b4a-dd2e-477a-9d13-33db5a80ce17,allergy

@@ -22,7 +22,7 @@ python3 dataPreprocessing.py "$INPUT_FILE" "$MAPPINGS_FILE" "../preprocessed_dat
 
 # Verificar si el comando anterior fue exitoso
 if [ $? -ne 0 ]; then
-    echo "Error al ejecutar dataPreprocessing.py"
+    echo "Error when executing dataPreprocessing.py"
     exit 1
 fi
 
@@ -31,7 +31,7 @@ python3 initiate.py ../
 
 # Verificar si el comando anterior fue exitoso
 if [ $? -ne 0 ]; then
-    echo "Error al ejecutar initiate.py"
+    echo "Error when executing initiate.py"
     exit 1
 fi
 
@@ -41,7 +41,7 @@ mv ../initiate_output.ttl "$OUTPUT"
 
 # Verificar si el comando anterior fue exitoso
 if [ $? -ne 0 ]; then
-    echo "Error al mover initiate_output.ttl a $OUTPUT"
+    echo "Error when moving initiate_output.ttl to $OUTPUT"
     exit 1
 fi
 
@@ -50,8 +50,8 @@ rm -rf ../csv/* ../rules/* ../instances/* ../preprocessed_data/*
 
 # Verificar si el comando anterior fue exitoso
 if [ $? -ne 0 ]; then
-    echo "Error al borrar contenido de los directorios ../csv, ../rules ../instances o ../preprocessed_data"
+    echo "Error deleting the directories ../csv, ../rules ../instances or ../preprocessed_data"
     exit 1
 fi
 
-echo "Ejecución completada con éxito."
+echo "Execution successful."

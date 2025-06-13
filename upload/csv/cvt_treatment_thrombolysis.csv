@@ -1,2 +1,0 @@
-field_id,pattern_type,source_procedure,procedure_part,procedure_result,ontology_mapping,observable,finding,procedure,OBLIGATORY,value_type,categorical_value,categorical_ontology_mapping,procedure_reason,procedure_location,measurement_unit,procedure_frequency,temporal_context,statement_context,case_id,field_value
-cvt_treatment_thrombolysis,ClinicalProcedureStatement,http://snomed.info/id/277132007,,,CVTTreatment,,,http://snomed.info/id/230936002,1.0,Boolean,,,,,,,,,2f2f4267-9831-44ef-a58a-ff3fa0d8dbb7,FALSO
